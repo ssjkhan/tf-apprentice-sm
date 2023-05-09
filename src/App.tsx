@@ -21,13 +21,12 @@ function App() {
       </div>
       <div className="border-white border-2 py-4">
         <div className="flex justify-between px-24 items-center">
-          <div className="py-10">Use State Counter</div>
+          <div className="py-10">State Counter: {count}</div>
           <button
-            className="px-5 py-10 border-teal-500 border-4"
+            className="px-12 py-10 border-teal-500 border-4"
             onClick={() => setCount((count) => count + 1)}
           >
-            <div>Click++!</div>
-            count is {count}
+            Click++
           </button>
         </div>
       </div>

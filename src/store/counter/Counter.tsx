@@ -1,7 +1,11 @@
 import { useCounterStore } from "./";
+import { useState } from "react";
 
 export default function Counter() {
   const { count, increaseCount } = useCounterStore();
+  const [count2, setCount2] = useState(0);
+
+  console.log(count2, setCount2);
 
   // console.log(count, increaseCount);
 

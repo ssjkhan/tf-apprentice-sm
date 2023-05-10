@@ -1,11 +1,11 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { Counter } from "./store/counter/";
+import StateButton from "./components/StateButton";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [state, setState] = useState({});
 
   return (
     <>
@@ -19,17 +19,8 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="border-white border-2 py-4">
-        <div className="flex justify-between px-24 items-center">
-          <div className="py-10">State Counter: {count}</div>
-          <button
-            className="px-12 py-10 border-teal-500 border-4"
-            onClick={() => setCount((count) => count + 1)}
-          >
-            Click++
-          </button>
-        </div>
-      </div>
+      <StateButton />
+      <StateButton />
       <Counter />
       <Counter />
     </>
